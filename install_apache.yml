@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+  
+  - name: install the apache2 package
+    zypper:
+         name: apache2
+         state: latest    
